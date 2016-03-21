@@ -1,3 +1,4 @@
+# Can use pattern matching to create base cases for recursive functions
 defmodule Recursion do
   def sum(1), do: 1
   def sum(n), do: n + sum(n - 1)
