@@ -5,15 +5,7 @@ fizzbuzz = fn
   (_, _, z) -> z
 end
 
-# IO.puts fizzbuzz.(0, 0, 2)
-# IO.puts fizzbuzz.(0, 4, 1)
-# IO.puts fizzbuzz.(6, 0, 9)
-
-feed_fizzbuzz = fn(n) ->
-  three = rem(n, 3)
-  five = rem(n, 5)
-  fizzbuzz.(three, five, n)
-end
+feed_fizzbuzz = fn(n) -> fizzbuzz.(rem(n, 3), rem(n, 5), n) end
 
 IO.puts feed_fizzbuzz.(10)
 IO.puts feed_fizzbuzz.(11)
