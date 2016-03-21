@@ -1,3 +1,4 @@
+# Functions can have multiple bodies
 fizzbuzz = fn
   (0, 0, _) -> "FizzBuzz"
   (0, _, _) -> "Fizz"
